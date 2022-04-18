@@ -1,0 +1,65 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html {
+  font-size: 125%;
+}
+body {
+  margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: blueviolet;
+  font-size: 3rem;
+}
+select {
+  border-radius: 10px;
+  width: 50%;
+}
+optgroup {
+  font-size: 1rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 0 50px;
+}
+button {
+  background-color: lightsalmon;
+  height: 25px;
+  border-radius: 10px; 
+}
+img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+}
+/* .ingredient {
+  margin-top: -70px;
+} */
+ul {
+  list-style: none;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+/* MEDIA QUERIES
+@media screen and (max-width: 420px) {
+  
+} */
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
