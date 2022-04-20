@@ -19,12 +19,21 @@ function getMeal () {
 
         document.querySelector('img').src = data.meals[0].strMealThumb
 
+        const a = document.createElement('a');
+        const linkText = document.createTextNode( "Watch Video Tutorial" );
+        a.appendChild(linkText);
+        a.title = "Watch Video Tutorial";
+        a.href = `${data.meals[0].strYoutube}`
+        
+        // document.body.appendChild(a);
+        document.querySelector('.video').appendChild(a)
+
         // Make Youtube Video be playable on website
-        if(data.meals[0].strYoutube === 'video'){
-            document.querySelector('iframe').src = data.meals[0].strYoutube
-        } else{
-            console.log('Media Not Supported')
-        }
+        // if(data.meals[0].strYoutube === 'video'){
+        //     document.querySelector('iframe').src = data.meals[0].strYoutube
+        // } else{
+        //     console.log('Media Not Supported')
+        // }
 
         // forEach Loop to search for ingredients and add it to a list
         data.meals.forEach (obj => {
@@ -103,34 +112,10 @@ function getMeal () {
         document.querySelector('.instructions').innerText = (`Instructions: 
         ${data.meals[0].strInstructions}
         `)
+        // const howTo = document.createElement('li');
+        // howTo.textContent = `${data.meals[0].strInstructions}`
+        // document.querySelector('.howTo').appendChild(howTo)
     })
    .catch(err => { console.log(`error ${err}`) 
     });
 }
-
-//The user will enter a meal. Get a meal name, photo, and instructions and place them in the DOM
-
-// Add event listener for the button 
-document.querySelector('button').addEventListener('click', getMeal)
-
-// // Create a function for getDrink
-// function getMeal () {
-//     // Get value that user input on the page
-//     let meal = document.querySelector('input').value
-
-//     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`) 
-
-//    .then(res => res.json()) // parse response as JSON 
-//    .then(data => { 
-//        console.log(data.meals[0]) 
-       
-//    // put the result into your HTML
-//         document.querySelector('h2').innerText = (`Meal name: ${data.meals[0].strMeal}`)
-//         document.querySelector('img').src = data.meals[0].strMealThumb
-//         document.querySelector('h3').innerText = data.meals[0].strInstructions
-//         // Make Youtube Video be playable on website
-//         document.querySelector('video').src = data.meals[0].strYoutube
-//     })
-//    .catch(err => { console.log(`error ${err}`) 
-//     });
-// }

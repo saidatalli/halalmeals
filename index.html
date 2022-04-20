@@ -18,90 +18,83 @@
 
 		<h1>What Do You Want to Cook?</h1>
 		<!-- <input type="text" name="" value=""> -->
-		<select>
-			<option value="" selected="selected">Choose a meal:</option>
-			<optgroup label="RICE MEALS">
-			  	<option>Japanese Gohan Rice</option>
-			  	<option>Jerk Chicken with Rice & Peas</option>
-			</optgroup>
-			<optgroup label="PASTA MEALS">
-				<option>Mediterranean Pasta</option>
-		  	</optgroup>
-			<optgroup label="CHICKEN MEALS">
-				<option>Chicken Handi</option>
-				<option>Chicken Congee</option>
-			  	<option>Tandoori Chicken</option>
-			  	<option>Chicken Couscous</option>
-				<option>Brown Stew Chicken</option>
-				<option>Chicken Karaage</option>
-				<option>Katsu Chicken Curry</option>
-				<option>Nutty Chicken Curry</option>
-				<option>General Tso's Chicken</option>
-				<option>Kentucky Fried Chicken</option>
-				<option>Teriyaki Chicken Casserole</option>
-				<option>Chicken Quinoa Greek Salad</option>
-				<option>Chicken & Mushroom</option>
-				<option>Chicken Enchilada Casserole</option>
-				<option>Chicken Fajita Mac and Cheese</option>
-				<option>Crockpot Chicken Baked Tacos</option>
-			</optgroup>
-			<optgroup label="VEGETARIAN MEALS">
-				<option>Vegetarian Chilli</option>
-				<option>Vegetarian Casserole</option>
-		  	</optgroup>
-			<optgroup label="VEGAN MEALS">
-				<option>Vegan Lasagna</option>
-				<option>Vegan Chocolate Cake</option>
-		  	</optgroup>
-			<optgroup label="BEEF MEALS">
-				<option>Beef Lo Mein</option>
-				<option>Oxtail with Broad Beans</option>
-				<option>Beef Rendang</option>
-				<option>Szechuan Beef</option>
-				<option>Minced Beef Pie</option>
-				<option>Beef Sunday Roast</option>
-				<option>Braised Beef Chilli</option>
-				<option>Massaman Beef Curry</option>
-				<option>Jamaican Beef Patties</option>
-				<option>Beef Brisket Pot Roast</option>
-				<option>Corned Beef and Cabbage</option>
-				<option>Beef Banh Mi Bowls with Sriracha Mayo</option>
-		  	</optgroup>
-		  	<optgroup label="LAMB MEALS">
-			  <option>Lamb Tagine</option>
-			  <option>Lamb Biryani</option>
-			  <option>Lamb Rogan Josh</option>
-			  <option>Tunisian Lamb Soup</option>
-			  <option>Lamb and Potato pie</option>
-			  <option>Stuffed Lamb Tomatoes</option>
-			  <option>Lamb Tzatziki Burgers</option>
-			  <option>Lamb and Lemon Souvlaki</option>
-			  <option>Lamb tomato and sweet spices</option>
-		  	</optgroup>
-		</select>	
-		
-		<button type="button" name="button">Get Recipe</button>
+		<div class="mainContainer">
+			<select>
+				<option value="" selected="selected">Choose a meal:</option>
+				<optgroup label="RICE MEALS">
+					<option>Japanese Gohan Rice</option>
+					<option>Jerk Chicken with Rice & Peas</option>
+				</optgroup>
+				<optgroup label="PASTA MEALS">
+					<option>Mediterranean Pasta</option>
+				</optgroup>
+				<optgroup label="CHICKEN MEALS">
+					<option>Chicken Handi</option>
+					<option>Chicken Congee</option>
+					<option>Tandoori Chicken</option>
+					<option>Chicken Couscous</option>
+					<option>Brown Stew Chicken</option>
+					<option>Chicken Karaage</option>
+					<option>Katsu Chicken Curry</option>
+					<option>Nutty Chicken Curry</option>
+					<option>General Tso's Chicken</option>
+					<option>Kentucky Fried Chicken</option>
+					<option>Teriyaki Chicken Casserole</option>
+					<option>Chicken Quinoa Greek Salad</option>
+					<option>Chicken & Mushroom</option>
+					<option>Chicken Enchilada Casserole</option>
+					<option>Chicken Fajita Mac and Cheese</option>
+					<option>Crockpot Chicken Baked Tacos</option>
+				</optgroup>
+				<optgroup label="VEGETARIAN MEALS">
+					<option>Vegetarian Chilli</option>
+					<option>Vegetarian Casserole</option>
+				</optgroup>
+				<optgroup label="VEGAN MEALS">
+					<option>Vegan Lasagna</option>
+					<option>Vegan Chocolate Cake</option>
+				</optgroup>
+				<optgroup label="BEEF MEALS">
+					<option>Beef Lo Mein</option>
+					<option>Oxtail with Broad Beans</option>
+					<option>Beef Rendang</option>
+					<option>Minced Beef Pie</option>
+					<option>Beef Sunday Roast</option>
+					<option>Braised Beef Chilli</option>
+					<option>Massaman Beef Curry</option>
+					<option>Jamaican Beef Patties</option>
+					<option>Beef Brisket Pot Roast</option>
+					<option>Corned Beef and Cabbage</option>
+					<option>Beef Banh Mi Bowls with Sriracha Mayo</option>
+				</optgroup>
+				<optgroup label="LAMB MEALS">
+				<option>Lamb Tagine</option>
+				<option>Lamb Biryani</option>
+				<option>Lamb Rogan Josh</option>
+				<option>Tunisian Lamb Soup</option>
+				<option>Lamb and Potato pie</option>
+				<option>Stuffed Lamb Tomatoes</option>
+				<option>Lamb Tzatziki Burgers</option>
+				<option>Lamb and Lemon Souvlaki</option>
+				<option>Lamb tomato and sweet spices</option>
+				</optgroup>
+			</select>	
+			
+			<button type="button" name="button">Get Recipe</button>
+		</div>
 
 		<h2>Meal Name</h2>
 
 		<img src="" alt="">
-		<iframe src="" frameborder="0"></iframe>
+		
+		<!-- <iframe src="" frameborder="0"></iframe> -->
 
 		<h3 class="ingredient">Ingredients</h3>
 		<ul class="ingredientsList"></ul>
 		<h3 class="instructions"></h3>
+		<!-- <ul class="howTo"></ul> -->
 
-		<!-- I want to get video url from API and insert into DOM as a playable video -->
-		<!-- <video controls width="250">
-
-			<source src=""
-					type="video/webm">
-		
-			<source src=""
-					type="video/mp4">
-		
-			Sorry, your browser doesn't support embedded videos.
-		</video> -->
+		<h4 class="video"></h4>
 
 		
 
