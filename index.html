@@ -4,8 +4,9 @@
     	<meta charset="utf-8">
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
 
-		<title>Meal Recipe</title>
+		<title>Halal Meals Recipe</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -15,9 +16,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 	</head>
 	<body>
-
 		<h1>What Do You Want to Cook?</h1>
-		<!-- <input type="text" name="" value=""> -->
 		<div class="mainContainer">
 			<select>
 				<option value="" selected="selected">Choose a meal:</option>
@@ -83,21 +82,18 @@
 			<button type="button" name="button">Get Recipe</button>
 		</div>
 
-		<h2>Meal Name</h2>
-
-		<img src="" alt="">
 		
-		<!-- <iframe src="" frameborder="0"></iframe> -->
+		<div class="mealCard">
+			<img src="" alt="">
+			<h2 class="mealName"></h2>
+			<h4 class="video"></h4>
+		</div>
 
 		<h3 class="ingredient">Ingredients</h3>
 		<ul class="ingredientsList"></ul>
+		
 		<h3 class="instructions"></h3>
 		<!-- <ul class="howTo"></ul> -->
-
-		<h4 class="video"></h4>
-
-		
-
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

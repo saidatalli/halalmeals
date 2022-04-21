@@ -2,6 +2,11 @@
 
 // Add event listener for the button 
 document.querySelector('button').addEventListener('click', getMeal)
+// document.getElementByClassName("ul").value = ''
+// a.linkText = ''
+// document.querySelector('ul').appendChild = ''
+// document.querySelector('.instructions').innerText = ''
+
 
 // Create a function for getMeal
 function getMeal () {
@@ -10,32 +15,26 @@ function getMeal () {
 
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`) 
 
-   .then(res => res.json()) // parse response as JSON 
+   .then(res => res.json()) 
    .then(data => { 
        console.log(data.meals[0]) 
        
-   // put the result into your HTML
         document.querySelector('h2').innerText = (`Meal name: ${data.meals[0].strMeal}`)
 
         document.querySelector('img').src = data.meals[0].strMealThumb
 
         const a = document.createElement('a');
-        const linkText = document.createTextNode( "Watch Video Tutorial" );
+        const linkText = document.createTextNode("Watch Recipe Video");
         a.appendChild(linkText);
-        a.title = "Watch Video Tutorial";
         a.href = `${data.meals[0].strYoutube}`
-        
-        // document.body.appendChild(a);
+        a.target = "_blank"
+        // Fix concatenation bug1
+        document.querySelector('.video').replaceChildren()
         document.querySelector('.video').appendChild(a)
-
-        // Make Youtube Video be playable on website
-        // if(data.meals[0].strYoutube === 'video'){
-        //     document.querySelector('iframe').src = data.meals[0].strYoutube
-        // } else{
-        //     console.log('Media Not Supported')
-        // }
-
-        // forEach Loop to search for ingredients and add it to a list
+        
+        // Fix concatenation bug2
+        const ul = document.querySelector('ul');
+            ul.replaceChildren()
         data.meals.forEach (obj => {
             // console.log(obj.strIngredient)
             // Create an li
@@ -83,38 +82,14 @@ function getMeal () {
             li20.textContent = obj.strIngredient20
             
             // append the li to the ul
-            document.querySelector('ul').appendChild(li1).appendChild(li2).appendChild(li3).appendChild(li4).appendChild(li5).appendChild(li6).appendChild(li7).appendChild(li8).appendChild(li9).appendChild(li10).appendChild(li11).appendChild(li12).appendChild(li13).appendChild(li14).appendChild(li15).appendChild(li16).appendChild(li17).appendChild(li18).appendChild(li19).appendChild(li20)
+            document.querySelector('ul').appendChild(li1).appendChild(li2).appendChild(li3).appendChild(li4).appendChild(li5).appendChild(li6).appendChild(li7).appendChild(li8).appendChild(li9).appendChild(li10).appendChild(li11).appendChild(li12).appendChild(li13).appendChild(li14).appendChild(li15).appendChild(li16).appendChild(li17).appendChild(li18).appendChild(li19).appendChild(li20) 
         })
-        // Hard coding the data for ingredients - Issue is that null shows when ingredient is absent
-        // document.querySelector('.ingredientsList').innerText = (`Ingredients: 
-        //   ${data.meals[0].strIngredient1} 
-        //   ${data.meals[0].strIngredient2}
-        //   ${data.meals[0].strIngredient3}
-        //   ${data.meals[0].strIngredient4}
-        //   ${data.meals[0].strIngredient5}
-        //   ${data.meals[0].strIngredient6}
-        //   ${data.meals[0].strIngredient7}
-        //   ${data.meals[0].strIngredient8}
-        //   ${data.meals[0].strIngredient9}
-        //   ${data.meals[0].strIngredient10}
-        //   ${data.meals[0].strIngredient11}
-        //   ${data.meals[0].strIngredient12}
-        //   ${data.meals[0].strIngredient13}
-        //   ${data.meals[0].strIngredient14}
-        //   ${data.meals[0].strIngredient15}
-        //   ${data.meals[0].strIngredient16}
-        //   ${data.meals[0].strIngredient17}
-        //   ${data.meals[0].strIngredient18}
-        //   ${data.meals[0].strIngredient19}
-        //   ${data.meals[0].strIngredient20}
-        // `)
+        
 
         document.querySelector('.instructions').innerText = (`Instructions: 
         ${data.meals[0].strInstructions}
         `)
-        // const howTo = document.createElement('li');
-        // howTo.textContent = `${data.meals[0].strInstructions}`
-        // document.querySelector('.howTo').appendChild(howTo)
+        
     })
    .catch(err => { console.log(`error ${err}`) 
     });
