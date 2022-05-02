@@ -31,7 +31,8 @@ function getMeal () {
         // Fix concatenation bug1
         document.querySelector('.video').replaceChildren()
         document.querySelector('.video').appendChild(a)
-        
+
+        document.querySelector('.ingredient').innerText = (`Ingredients:`)
         // Fix concatenation bug2
         const ul = document.querySelector('ul');
             ul.replaceChildren()
@@ -84,12 +85,11 @@ function getMeal () {
             // append the li to the ul
             document.querySelector('ul').appendChild(li1).appendChild(li2).appendChild(li3).appendChild(li4).appendChild(li5).appendChild(li6).appendChild(li7).appendChild(li8).appendChild(li9).appendChild(li10).appendChild(li11).appendChild(li12).appendChild(li13).appendChild(li14).appendChild(li15).appendChild(li16).appendChild(li17).appendChild(li18).appendChild(li19).appendChild(li20) 
         })
-        
 
-        document.querySelector('.instructions').innerText = (`Instructions: 
-        ${data.meals[0].strInstructions}
-        `)
-        
+        document.querySelector('.instructions').innerText = (`Instructions:`)
+        document.querySelector('.instructionGuide').innerText = (`
+            ${data.meals[0].strInstructions}
+        `)     
     })
    .catch(err => { console.log(`error ${err}`) 
     });

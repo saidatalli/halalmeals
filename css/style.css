@@ -74,7 +74,9 @@ ul {
   margin-left: 10px;
   font-size: 1rem;
 }
-
+.instructionGuide {
+  margin-left: 50px;
+}
 /* MEDIA QUERIES */
 /* Tablet */
 @media only screen and (min-width: 422px) and (max-width: 820px) {
