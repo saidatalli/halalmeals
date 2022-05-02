@@ -43,7 +43,7 @@ optgroup {
   border-radius: 20px;
   margin: 45px 15px 5px 50px;
   /* width: 70vh; */
-  height: 70vh;
+  height: 42vh;
 }
 img {
   width: 300px;
@@ -54,9 +54,9 @@ img {
 .mealName {
   font-size: 1.25rem;
 }
-.video {
+/* .video {
   margin-bottom: 35px;
-}
+} */
 h3 {
   font-size: 1.25rem;
   margin: 0 50px;
@@ -76,6 +76,7 @@ ul {
 }
 .instructionGuide {
   margin-left: 50px;
+  font-size: 1rem;
 }
 /* MEDIA QUERIES */
 /* Tablet */
@@ -97,8 +98,8 @@ ul {
   }
   img {
     align-self: center;
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
   .video {
     text-align: center;
@@ -109,10 +110,10 @@ ul {
 /* Smartphone */
 @media only screen and (max-width: 420px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
   .mealName {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
   }
   optgroup {
@@ -121,7 +122,7 @@ ul {
   .mealCard {
     justify-content: center;
     margin: 15px 15px 5px 0;
-    height: 60vh;
+    height: 50vh;
   }
   img {
     align-self: center;
