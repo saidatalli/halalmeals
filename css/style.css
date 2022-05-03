@@ -42,8 +42,8 @@ optgroup {
   flex-direction: column;
   border-radius: 20px;
   margin: 45px 15px 5px 50px;
-  /* width: 70vh; */
-  height: 42vh;
+  width: 70vh;
+  height: 55vh;
 }
 img {
   width: 300px;
@@ -114,24 +114,37 @@ ul {
   }
   .mealName {
     font-size: 1rem;
-    text-align: center;
+    padding-right: 150px;
+    /* text-align: center; */
+  }
+  select {
+    width: 60%;
   }
   optgroup {
     font-size: 0.5rem;
   }
   .mealCard {
-    justify-content: center;
+    /* justify-content: center; */
     margin: 15px 15px 5px 0;
-    height: 50vh;
+    height: 55vh;
   }
   img {
-    align-self: center;
-    width: 340px;
+    /* align-self: center; */
+    width: 300px;
     height: 200px;
   }
   .video {
-    text-align: center;
+    /* text-align: center; */
     padding-right: 35px;
+  }
+  h3, ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .instructionGuide {
+    margin-left: 0;
+    margin-right: 20px;
+    font-size: 1rem;
   }
 } 
 
