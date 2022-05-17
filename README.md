@@ -5,7 +5,7 @@ Halal means food made in line with Islamic guidelines. This means that muslims d
 https://halalmeals.netlify.app/
 
 
-![alt tag](https://drive.google.com/file/d/1L4VoYGEmofDuQ1ZIMtycKU5LNU3jwHR9/view?usp=sharing)
+![gif of halal meals webapp](https://media.giphy.com/media/52T2Ytb3Yp2NpLrkUV/giphy.gif)
 
 ## How It's Made:
 
