@@ -25,7 +25,9 @@ I learnt to always clear current content so that results do not concatenate when
 Take a look at other projects that I have in my porfolio:
 
 **Ewatomi Beauty Salon:** https://github.com/saidatalli/ewatomibeautysalon
+
 **Sunshine Nursery:** https://github.com/saidatalli/sunshinenursery
+
 **Taste of Africa:** https://github.com/saidatalli/tasteofafrica
 
 
