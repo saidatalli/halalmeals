@@ -22,7 +22,8 @@ I appended the ingredients as a child to the ul element. It eliminated the conca
 I learnt to always clear current content so that results do not concatenate when user makes repeated requests on the app.
 
 ## My other projects:
-Take a look at other projects that I have in my porfolio
+Take a look at other projects that I have in my porfolio:
+
 **Ewatomi Beauty Salon:** https://github.com/saidatalli/ewatomibeautysalon
 **Sunshine Nursery:** https://github.com/saidatalli/sunshinenursery
 **Taste of Africa:** https://github.com/saidatalli/tasteofafrica
